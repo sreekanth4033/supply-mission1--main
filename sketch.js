@@ -76,19 +76,23 @@ function draw() {
   packageSprite.y= packageBody.position.y 
 
   
+  drawSprites();
+  
   
  
 }
 
 
 function keyPressed() {
-	if (keyCode === DOWN_ARROW) {  
-	   Matter.Body.setStatic(packageBody,false); 
-	}
+	if (keyCode === DOWN_ARROW) {
+	   // Look at the hints in the document and understand how to make the package body fall only on press of the Down arrow key.
+	   Matter.Body.setStatic(packageBody,false);}
 	if (keyCode === LEFT_ARROW){
-		helicopterSprite.x=helicopterSprite.x +20;
+	helicoptersprite.x=helicoptersprite.x +20;
 	}
 	if (keyCode === RIGHT_ARROW){
-		helicopterSprite.x=helicopterSprite.x -20;
-	}
-}
+
+		helicoptersprite.x=helicoptersprite.x -20;
+		}
+   }
+   
